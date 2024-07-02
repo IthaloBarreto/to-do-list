@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('./todo.css');
+
+:root {
+    --fonte: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(19, 19, 19);
+    overflow: hidden;
+    font-family: var(--fonte);
+}
+
+.banner {
+    z-index: -1;
+}
+
+.banner div {
+    backdrop-filter: blur(7px);
+}
+
+.banner img {
+    width: 100vw;
+    clip-path: inset(15% 0 45% 0);
+    margin-top: -15%;
+    margin-bottom: -45%;
+}
+
+.banner__decoration {
+    width: 100vw;
+    height: 42.3vh;
+    background: rgb(65, 13, 113);
+    background: radial-gradient(circle, rgba(65, 13, 113, 0.856) 0%, rgba(22, 0, 43, 0.87) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

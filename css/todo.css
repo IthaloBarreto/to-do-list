@@ -1,0 +1,230 @@
+/* MENU TO DO */
+.background__todo {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: 620px;
+    background-color: rgb(47, 12, 87);
+    border-radius: 16px;
+    box-shadow: 0px 1px 10px -1px rgba(0, 0, 0, 0.37);
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/* TEXTAREA STYLE */
+.textarea__task {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c931;
+}
+
+.edit__form {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c9c9c931;
+}
+
+.edit__form label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.textarea__task label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.button__add {
+    margin-top: 35px;
+    display: flex;
+    gap: 10px;
+}
+
+.button__add button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.background__todo button i {
+    font-size: 38px;
+    color: rgba(197, 154, 197, 0.493);
+}
+
+.background__todo button i:hover {
+    font-size: 38px;
+    color: rgba(197, 154, 197, 0.322);
+}
+
+#textarea {
+    color: rgb(255, 255, 255);
+    width: 94%;
+    max-width: 94%;
+    min-width: 94%;
+    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+    border: none;
+    padding: 0.9em 1em;
+    border-radius: 18px;
+    background-color: rgba(197, 154, 197, 0.493);
+    outline: none;
+    margin-top: 13px;
+    resize: none;
+}
+
+#textarea::placeholder {
+    color: #c9c9c9b0;
+    font-size: 15px;
+    padding-left: 4px;
+}
+
+#textarea:placeholder-shown {
+    color: white;
+    font-size: 15px;
+    padding: 14px 23px;
+}
+
+/* TOOLBAR */
+#toolbar label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#toolbar {
+    display: flex;
+    margin-top: 40px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #c9c9c931;
+}
+
+.search {
+    padding-left: 1.5em;
+    padding-right: 2em;
+    border-right: 1px solid #c9c9c931;
+}
+
+#input__search {
+    color: white;
+    margin-top: 7px;
+    width: 100%;
+    padding: 0.7em 1em;
+    border: none;
+    border-radius: 11px;
+    background-color: rgba(197, 154, 197, 0.493);
+    outline: none;
+}
+
+#input__search::placeholder {
+    padding-left: 0.2em;
+    color: #c9c9c9b0;
+}
+
+#input__search:placeholder-shown {
+    color: white;
+}
+
+.filter {
+    padding-left: 2.5em;
+}
+
+.filter label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    display: block;
+}
+
+#select__filter {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-top: 7px;
+    width: 115%;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(197, 154, 197, 0.493);
+    outline: none;
+    color: #d8d8d89c;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%238f8f8fb9" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.4em top 50%;
+    background-size: 1.5em;
+    cursor: pointer;
+}
+
+#select__filter option {
+    color: #8f8f8fb9;
+    background-color: rgb(85, 45, 107);
+}
+
+
+
+/* TASKS */
+
+.hide {
+    display: none;
+}
+
+.todo__list {
+    margin-top: 30px;
+}
+
+.todo {
+    width: 100%;
+    height: 75px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    background-color: rgba(197, 154, 197, 0.493);
+    margin-bottom: 20px;
+}
+
+.todo h3 {
+    color: white;
+}
+
+.todo button {
+    cursor: pointer;
+    margin: 0 3px;
+    border: none;
+    background-color: transparent;
+}
+
+.todo button i {
+    color: white;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+.todo button i:hover {
+    color: rgb(199, 198, 198);
+    transition: 0.;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+.done {
+    background-color: rgba(163, 115, 163, 0.11);
+}
+
+.done h3 {
+    font-style: italic;
+    color: #b1b1b1af;
+    text-decoration: line-through;
+}
+
+#edit {
+    font-size: 40px;
+}

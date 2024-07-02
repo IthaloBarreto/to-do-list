@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+        <div class="banner">
+            <div>
+                <img src="https://www.jumaq.com.br/wp-content/uploads/2019/02/grovemade-239357-unsplash.jpg"
+                    alt="imagem banner">
+            </div>
+            <div class="banner__decoration"></div>
+        </div>
+
+
+        <section>
+
+
+            <div class="background__todo">
+                <div class="textarea__task">
+                    <div>
+                        <label for="textarea">Adicione sua tarefa</label>
+                        <textarea id="textarea" placeholder="O que você quer adicionar as suas tarefas?"></textarea>
+                    </div>
+                    <div class="button__add">
+                        <button class="add__task">
+                            <i class="bi bi-plus-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="edit__form hide">
+                    <div>
+                        <label for="textarea">Edite sua tarefa</label>
+                        <input id="textarea" placeholder="Editar tarefa" class="input__edit"></input>
+                    </div>
+                    <div class="button__add">
+                        <button class="add__edit">
+                            <i id="edit" class="bi bi-check-circle"></i>
+                        </button>
+                        <button class="cancel-btn">
+                            <i id="edit" class="bi bi-x-circle-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="toolbar">
+                    <div class="search">
+                        <label for="form__search">Pesquisar</label>
+                        <form id="form__search">
+                            <input id="input__search" placeholder="Buscar">
+                        </form>
+                    </div>
+                    <div class="filter">
+                        <label for="select__filter">Filtrar</label>
+                        <select id="select__filter">
+                            <option value="all">Todos</option>
+                            <option value="done">Feitos</option>
+                            <option value="todo">A fazer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="todo__list">
+
+                    <!-- <div class="todo done">
+                        <h3 class="todo__title">Estudando Front-End</h3>
+                        <div class="task__buttons">
+                            <button class="complete-task">
+                                <i class="bi bi-check-circle"></i>
+                            </button>
+                            <button class="edit-task">
+                                <i class="bi bi-pencil"></i>
+                            </button>
+                            <button class="remove-task">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        </div>
+                    </div> -->
+
+            </div>
+        </section>
+        <script src="./app/script.js" defer></script>
+</body>
+
+</html>
